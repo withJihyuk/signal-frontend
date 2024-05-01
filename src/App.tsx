@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home/pages";
+import Topbar from "./components/Topbar/pages";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         path="/"
         element={
           <>
+            <Topbar privacy={{ name: "지혁" }} />
             <Home></Home>
           </>
         }
