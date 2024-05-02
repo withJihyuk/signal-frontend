@@ -5,11 +5,25 @@ export const ButtonObject = styled.div`
   display: flex;
   flex-direction: row;
   height: 60px;
-  padding-left: 50px;
+  justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  gap: 45px;
   border-radius: 15px;
+  @media (max-width: 320px) {
+    width: 200px;
+  }
+
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+`;
+
+export const ButtonBetween = styled.div`
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  justify-content: center;
+  padding-left: 50px;
 `;
 
 export const ButtonText = styled.div`
@@ -21,4 +35,13 @@ export const ButtonText = styled.div`
   font-weight: 700;
   line-height: 14px;
   letter-spacing: -0.5px;
+`;
+
+export const Alert = styled.div`
+  width: 10px;
+  margin-right: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  background-color: #f82e62;
+  border-radius: 100%;
 `;

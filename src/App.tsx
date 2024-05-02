@@ -4,6 +4,7 @@ import Topbar from "./components/Topbar/pages";
 import Ad from "./components/Ad/pages";
 import Arrowtopbar from "./components/Arrowtopbar/pages";
 import Login from "./Pages/Login/pages";
+import Message from "./Pages/Message/pages";
 
 function App() {
   return (
@@ -23,6 +24,14 @@ function App() {
           <>
             <Topbar privacy={{ name: "지혁" }} />
             <Ad />
+            <Message />
+          </>
+        }
+      />
+      <Route
+        path="/"
+        element={
+          <>
             <Home />
           </>
         }
