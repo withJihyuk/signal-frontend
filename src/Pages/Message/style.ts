@@ -7,11 +7,12 @@ export const ButtonObject = styled.div`
   margin-bottom: 30px;
 `;
 
-export const Morebutton = styled.div`
+export const Morebutton = styled.button`
   width: 130px;
   height: 40px;
   border-radius: 10px;
   display: flex;
+  border: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -26,7 +27,7 @@ export const MoreText = styled.p`
   font-size: 15px;
   font-style: normal;
   font-weight: 700;
-  line-height: 14px; /* 93.333% */
+  line-height: 14px;
   letter-spacing: -0.5px;
 `;
 
@@ -83,16 +84,28 @@ export const SendMessageObject = styled.div`
   bottom: 30px;
   width: 100%;
   left: 50%;
+
   transform: translate(-50%, 0);
 `;
 
-export const SendMessageBox = styled.div`
+export const SendMessageBox = styled.input`
   width: 70%;
   height: 40px;
-  flex-shrink: 0;
   border-radius: 100px;
-  background: #fff;
+  border: none;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.5px;
+  text-indent: 20px;
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const AddButton = styled.div`
@@ -106,4 +119,25 @@ export const AddButton = styled.div`
   align-items: center;
   margin-right: 15px;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+`;
+
+export const SumbitButton = styled.button`
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  color: #f82e62;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px; /* 87.5% */
+  letter-spacing: -0.5px;
+  top: 0;
+  border: none;
+  background: none;
+  bottom: 0;
+  right: 13%;
+  margin: auto 0;
+  border-radius: 3px;
 `;

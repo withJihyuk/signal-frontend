@@ -18,7 +18,7 @@ export default function Message() {
       </S.ButtonObject>
       <S.chatObject>
         <S.chatBox>
-          <S.chatText>디자인 안할래요 ㅋㅋ 이게맞냐</S.chatText>
+          <S.chatText>디자인 안할래요 ㅋㅋ 이게맞나</S.chatText>
         </S.chatBox>
       </S.chatObject>
       <S.chatObject>
@@ -40,7 +40,8 @@ export default function Message() {
         <S.AddButton>
           <img src={plus} width="14" height="14" alt="menu" />
         </S.AddButton>
-        <S.SendMessageBox />
+        <S.SendMessageBox placeholder={"익명으로 질문하기"} />
+        <S.SumbitButton>보내기</S.SumbitButton>
       </S.SendMessageObject>
     </div>
   );
